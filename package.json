@@ -1,0 +1,31 @@
+{
+  "name": "site-web",
+  "version": "1.0.0",
+  "description": "Code base du fil rouge pour le cours OpenClassrooms [Créez des pages web dynamiques avec JavaScript](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --port 8081 --no-cors db.json",
+    "dev": "http-server",
+    "lint": "eslint *.js"
+  },
+  "author": "Thomas Kerbrat",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@faker-js/faker": "^6.3.1",
+    "eslint": "^9.39.5",
+    "globals": "^17.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chartjs/Chart.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chartjs/Chart.js/issues"
+  },
+  "homepage": "https://github.com/chartjs/Chart.js#readme"
+}

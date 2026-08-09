@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les Bonnes Pièces</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="pieces.js"></script>
+		<script src="node_modules/chart.js/dist/chart.umd.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
+			<h1>Les Bonnes Pièces</h1>
+		</header>
+		<main>
+			<!-- Menu de recherche -->
+			<section class="filtres">
+				<h3>Filtres</h3>
+				<button class="btn-trier">Trier par prix croissant</button>
+				<br>
+				<button class="btn-filtrer">Filtrer les pièces non abordables</button>
+				<br>
+				<button class="btn-decroissant">Trier par prix décroissant</button>
+				<br>
+				<button class="btn-nodesc">Filtrer les pièces sans description</button>
+				<input type="range" min="0" max="60" step="5" value="1" class=".my_range" id="my_range">';
+				<h3>Ajouter un avis</h3>
+				<form class="formulaire_avis">
+				Identifiant de la pièce :<br>
+				<input type="number" name="piece_id"><br>
+				Nom d'utilisateur :<br>
+				<input type="text" name="utilisateur"><br>
+				Avis :<br>
+				<input type="text" name="commentaire"><br>
+				Nombres étoiles:<br>
+				<input type="number" name="nbEtoiles"><br>
+				<button>Envoyer</button>
+				</form><br>
+				<h3>Données</h3>
+				<button class="btn_maj">Mettre à jour les pièces</²button>
+				<!--GRAPHIQUE DES AVIS-->
+				<h3>Aperçus des avis</h3>
+				<canvas id="graphique-avis" width="300" height="300"></canvas>
+				<!--GRAPHIQUE NOMBRE D'AVIS SELON LA DISPONIBILITE-->
+				<h3>Avis des pièces disponibles </h3>
+				<canvas id="graphique-com-pieces-dispo-indispo" width="300" height="300"></canvas>
+				
+			</section>
+
+
+			<!-- Fiches produits -->
+			<section class="fiches">
+				<!-- Code ajouté -->
+				<div class="abordables">
+					<p>Pièces abordables :</p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
